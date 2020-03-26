@@ -17,7 +17,7 @@ def ameno(file):
     # I used this one: https://www.dafont.com/ameno.font
     font = ImageFont.truetype("/etc/ameno/ameno.ttf", int(width/7))
     x = int(width / 2 - width / 3.5)
-    y = int(height * 0.77)
+    y = height - int(width/7 * 1.328147)
     tool.text((x, y), "DORIME", (255, 255, 255), font=font)
     image.save(f'{download_to}/output.jpg', 'JPEG', quality=100)
 
